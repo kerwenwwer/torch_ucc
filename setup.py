@@ -62,6 +62,7 @@ else:
         libraries = plugin_libraries,
         extra_compile_args=plugin_compile_args
     )
+plugin_compile_args.append("-D_GNU_SOURCE")
 setup(
     name = "torch-ucc",
     version = "1.0.0",
